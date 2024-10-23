@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h2>Hi, <span id="userName">Guest</span>! Welcome to Our Website</h2>
+            <p>We are glad to have you here.</p>
+        </div>
+    </header>
+
+    <section id="profile" class="profile-section">
+        <h2>Our Profile</h2>
+        <div class="profile-content">
+            <div class="about-company">
+                <h3>About the Company</h3>
+                <p>We are a leading firm in providing quality and value to our customers.</p>
+            </div>
+            <div class="vision-mission">
+                <h3>Vision & Mission</h3>
+                <p><strong>Vision:</strong> To be the top provider of solutions that enable growth and success.</p>
+                <p><strong>Mission:</strong> To deliver excellent services with a focus on innovation, integrity, and customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Message Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select id="gender" name="gender">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
